@@ -11,33 +11,34 @@ on:
 jobs:
   list-update:
     runs-on: ubuntu-24.04-arm
-    matrix:
-      countryfeed:
-        [
-          DE,
-          GR,
-          GB,
-          BE,
-          FR,
-          TR,
-          NO,
-          AT,
-          RO,
-          CZ,
-          SE,
-          NL,
-          FI,
-          SK,
-          UA,
-          ES,
-          MK,
-          IT,
-          CH,
-          PL,
-          BG,
-          LV,
-          DK,
-        ]
+    strategy:
+      matrix:
+        countryfeed:
+          [
+            DE,
+            GR,
+            GB,
+            BE,
+            FR,
+            TR,
+            NO,
+            AT,
+            RO,
+            CZ,
+            SE,
+            NL,
+            FI,
+            SK,
+            UA,
+            ES,
+            MK,
+            IT,
+            CH,
+            PL,
+            BG,
+            LV,
+            DK,
+          ]
 
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
