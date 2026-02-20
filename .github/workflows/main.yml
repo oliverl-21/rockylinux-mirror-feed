@@ -23,8 +23,8 @@ jobs:
 
       - name: Update Lists
         run: |
-          curl -fsSL 'https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=BaseOS-10&country=DE' | awk -F/ '/:\/\//{print $3}' | sed 's/:.*//' | sort -u > feed/de
-          curl -fsSL 'https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=BaseOS-10&country=DE,GR,GB,BE,FR,TR,NO,AT,RO,CZ,SE,NL,FI,SK,UA,ES,MK,IT,CH,PL,BG,LV,DK' | awk -F/ '/:\/\//{print $3}' | sed 's/:.*//' | sort -u > feed/europe
+          curl -fsSL 'https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=BaseOS-10&country=DE' | awk -F/ '/:\/\//{print $3}' | sed 's/:.*//' | sort -u > feed/BaseOS/de
+          curl -fsSL 'https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=BaseOS-10&country=DE,GR,GB,BE,FR,TR,NO,AT,RO,CZ,SE,NL,FI,SK,UA,ES,MK,IT,CH,PL,BG,LV,DK' | awk -F/ '/:\/\//{print $3}' | sed 's/:.*//' | sort -u > feed/BaseOS/europe
 
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
