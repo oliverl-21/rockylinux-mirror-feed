@@ -30,5 +30,3 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Update Feed
-          push_options: "--force"
-          skip_fetch: false
