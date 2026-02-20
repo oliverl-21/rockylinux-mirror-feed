@@ -69,7 +69,6 @@ jobs:
 
   list-update-europe:
     runs-on: ubuntu-24.04-arm
-    strategy:
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
       contents: write
