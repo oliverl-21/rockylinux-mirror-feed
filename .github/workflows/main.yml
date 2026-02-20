@@ -64,3 +64,4 @@ jobs:
         with:
           commit_message: Update Feed
           push_options: "--force"
+          skip_fetch: false
