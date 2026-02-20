@@ -57,9 +57,6 @@ jobs:
         run: |
           curl -fsSL 'https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=BaseOS-10&country=DE,GR,GB,BE,FR,TR,NO,AT,RO,CZ,SE,NL,FI,SK,UA,ES,MK,IT,CH,PL,BG,LV,DK' | awk -F/ '/:\/\//{print $3}' | sed 's/:.*//' | sort -u > feed/BaseOS/europe
 
-      - uses: actions/checkout@v6
-        with:
-          ref: ${{ github.head_ref }}
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Update Feed
