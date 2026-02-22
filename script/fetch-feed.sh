@@ -4,4 +4,3 @@ countryfeed=("DE" "GR" "GB" "BE" "FR" "TR" "NO" "AT" "RO" "CZ" "SE" "NL" "FI" "S
 for feed in "${countryfeed[@]}"; do
   curl -fsSL 'https://mirrors.rockylinux.org/mirrorlist?arch=x86_64&repo=BaseOS-10&country='$feed | awk -F/ '/:\/\//{print $3}' | sed 's/:.*//' | sort -u > feed/BaseOS/Europe-$feed
 done
-
