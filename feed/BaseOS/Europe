@@ -1,14 +1,13 @@
-fosszone.csd.auth.gr
-ftp.nluug.nl
 ftp.sh.cvut.cz
 mirror.accum.se
-mirror.in2p3.fr
+mirror.bahnhof.net
 mirror.netsite.dk
 mirror.netzwerge.de
 mirror.rabisu.com
 mirror.raiolanetworks.com
 mirror.telepoint.bg
 mirrors.dotsrc.org
+mirrors.hostiserver.com
 mirrors.melbourne.co.uk
 rocky-linux-europe-central2.production.gcp.mirrors.ctrliq.cloud
 rocky-linux-europe-north1.production.gcp.mirrors.ctrliq.cloud
@@ -20,5 +19,6 @@ rocky-linux-europe-west4.production.gcp.mirrors.ctrliq.cloud
 rocky-linux-europe-west6.production.gcp.mirrors.ctrliq.cloud
 rocky-linux-europe-west8.production.gcp.mirrors.ctrliq.cloud
 rocky-linux-europe-west9.production.gcp.mirrors.ctrliq.cloud
+rocky-linux.koyanet.lv
 rockylinux.hi.no
 rockylinux.uni-sofia.bg
